@@ -1,0 +1,28 @@
+css
+
+selectors
+div > p - p only children of div
+div p - all p inside div include p parented by others
+div + p - only </div><p>
+div ~ p - all p after </div><p>...<p> on same level
+
+pseudo elements
+::first-line - only for block level elements
+::first-letter - only for block level elements
+
+attribute selectors
+CSS [target] - select all elements with attribute
+CSS [attribute="value"] - select strict attr+value - a[target="_blank"] {...}
+CSS [attribute~="sometext"] Selector - value include "sometext"
+[class|="top"] - "top" or "top-mask" divided by (-) selected started from "top"
+[attribute^="top"] - value starts with "top"
+[attribute$="top"] - value ends with "top"
+[attribute*="top"] - value contains "top"
+
+Priority for use rule
+-the "!important" word
+-Inline styles - Example: <h1 style="color: pink;">
+-IDs - Example: #navbar
+-Classes, pseudo-classes, attribute selectors - Example: .test, :hover, [href]
+-Elements and pseudo-elements - Example: h1, :before
+
